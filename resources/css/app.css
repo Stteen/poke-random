@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind component;
+@tailwind utilities;
+
+@keyframes rainbow {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #57e2e5, #45fcbf, #f9f871, #ffa95e, #ff6ec4);
+    background-size: 1400% 1400%;
+    animation: rainbow 30s ease infinite;
+    color: white;
+}
+
+.card {
+    background: #1b1b2f;
+    border-radius: 20px;
+    padding: 2rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.pokemon-img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+
+.types {
+    margin-bottom: 1rem;
+}
+
+.type {
+    display: inline-block;
+    background-color: #e63946;
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.25rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.info div {
+    flex: 1;
+    padding: 0.5rem;
+    background: #2c2c54;
+    border-radius: 10px;
+    margin: 0 0.25rem;
+}
+
+.info div span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.info div small {
+    opacity: 0.8;
+}
