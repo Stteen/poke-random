@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Http;
 
+/**
+ * Pokedex Controller
+ *
+ * This controller handles the retrieval and display of Pokémon data.
+ * It fetches Pokémon details, species information, and evolution chains
+ * from the PokeAPI, caching results to optimize performance.
+ */
 class Pokedex extends Controller
 {
     public function __invoke(Request $request)
